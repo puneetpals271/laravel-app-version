@@ -1,0 +1,17 @@
+# Composer
+/vendor/
+composer.lock
+
+# PHPUnit
+/.phpunit.cache/
+/.phpunit.result.cache
+/phpunit.xml
+
+# Orchestra Testbench
+/.env
+/.env.testing
+
+# Editors and OS
+/.idea/
+/.vscode/
+.DS_Store

@@ -1,0 +1,60 @@
+{
+    "name": "puneetpal/laravel-app-version",
+    "description": "Minimum, recommended and latest app version policy for Laravel APIs that serve mobile apps: 426 Upgrade Required below minimum, Deprecation and Sunset headers below recommended, and a version-policy endpoint.",
+    "keywords": ["laravel", "mobile", "ios", "android", "api", "versioning", "force-update", "deprecation", "sunset"],
+    "homepage": "https://github.com/puneetpals271/laravel-app-version",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Puneetpal Arneja",
+            "homepage": "https://puneetpal.dev"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/puneetpals271/laravel-app-version/issues",
+        "source": "https://github.com/puneetpals271/laravel-app-version",
+        "security": "https://github.com/puneetpals271/laravel-app-version/blob/main/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^12.0 || ^13.0",
+        "illuminate/contracts": "^12.0 || ^13.0",
+        "illuminate/http": "^12.0 || ^13.0",
+        "illuminate/routing": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "phpunit/phpunit": "^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Puneetpal\\AppVersion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Puneetpal\\AppVersion\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Puneetpal\\AppVersion\\AppVersionServiceProvider"
+            ],
+            "aliases": {
+                "AppVersion": "Puneetpal\\AppVersion\\Facades\\AppVersion"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": false
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
